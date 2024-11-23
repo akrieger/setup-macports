@@ -231,7 +231,11 @@ main()
     else
 	install_from_source
     fi
-	
+    port list
+    port installed
+    sudo port -d sync
+    port list
+    port installed
     install_ports "${macports_prefix}/etc/setup-macports.yaml"
 }
 
